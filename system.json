@@ -64,7 +64,7 @@
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "moxie",
   "background": "systems/paranoia/media/paranoia_background.webp",
-  "url": "https://github.com/OtherwiseJunk/ParanoiaPerfectEditionSystem-foundryvtt",
+  "url": "https://github.com/rangelsardinha/ParanoiaPerfectEditionSystem-foundryvtt-ptbr",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md",
   "socket": true
