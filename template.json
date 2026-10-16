@@ -1,0 +1,15 @@
+{
+  "Actor": {
+    "types": [
+      "troubleshooter",
+      "nobody",
+      "somebody",
+      "accomplice"
+    ]
+  },
+  "Item": {
+    "types": [
+      "equipment"
+    ]
+  }
+}

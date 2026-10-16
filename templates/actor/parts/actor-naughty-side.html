@@ -1,0 +1,121 @@
+<section>
+    <div class="grid grid-2col">
+        <div>
+            <div>
+                <div class="paranoia-header">
+                    <label>{{localize "PARANOIA.Aliases"}}</label>
+                </div>
+                <div class="paranoia-editor-container">
+                    {{editor
+                    enrichedAliases
+                    target="system.secrets.aliases"
+                    button=true
+                    engine="prosemirror"
+                    editable=editable
+                    collaborate=true}}
+                </div>
+            </div>
+            <div>
+                <div class="paranoia-header">
+                    <label>{{localize "PARANOIA.SecretSociety"}}</label>
+                </div>
+                <div class="paranoia-editor-container">
+                    {{editor
+                    enrichedSecretSocieties
+                    target="system.secrets.secretSociety"
+                    button=true
+                    engine="prosemirror"
+                    editable=editable
+                    collaborate=false }}
+                </div>
+            </div>
+            <div>
+                <div class="paranoia-header">
+                    <label>{{localize "PARANOIA.SecretSocietyFavours"}}</label>
+                </div>
+                <div class="paranoia-editor-container">
+                    {{editor
+                    enrichedSecretSocietyFavors
+                    target="system.secrets.secretSocietyFavors"
+                    button=true
+                    engine="prosemirror"
+                    editable=editable
+                    collaborate=false}}
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="paranoia-header">
+                    <label>{{localize "PARANOIA.SecretObjective"}}</label>
+                </div>
+                <div class="paranoia-editor-container">
+                    {{editor
+                    enrichedSecretObjective
+                    target="system.secrets.secretObjective"
+                    button=true
+                    engine="prosemirror"
+                    editable=editable
+                    collaborate=false}}
+                </div>
+            </div>
+            <div>
+                <div class="paranoia-header">
+                    <label>{{localize "PARANOIA.MutantPower"}}</label>
+                </div>
+                <div class="paranoia-editor-container">
+                    {{editor
+                    enrichedMutantPowers
+                    target="system.secrets.mutantPower"
+                    button=true
+                    engine="prosemirror"
+                    editable=editable
+                    collaborate=false}}
+                </div>
+            </div>
+            <div>
+                <div class="paranoia-header">
+                    <label>{{localize "PARANOIA.ServiceGroupFavours"}}</label>
+                </div>
+                <div class="paranoia-editor-container">
+                    {{editor
+                    enrichedServiceGroupFavors
+                    target="system.secrets.serviceGroupFavors"
+                    button=true
+                    engine="prosemirror"
+                    editable=editable
+                    collaborate=false}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="paranoia-header">
+            <label>{{localize "PARANOIA.Evidence"}}</label>
+        </div>
+        <div class="paranoia-editor-container">
+            {{editor enrichedEvidence target="system.secrets.evidence" button=true engine="prosemirror"
+            editable=editable
+            collaborate=false}}
+        </div>
+    </div>
+    <div>
+        <div class="paranoia-header">
+            <label>{{localize "PARANOIA.SecretNotes"}}</label>
+        </div>
+        <div class="paranoia-editor-container">
+            {{editor enrichedSecretNotes target="system.secrets.notes" button=true engine="prosemirror"
+            editable=editable
+            collaborate=false}}
+        </div>
+    </div>
+    <div>
+        <div class="paranoia-header">
+            <label>{{localize "PARANOIA.TreasonousGear"}}</label>
+        </div>
+        <div class="gear-list-container" data-drop-type="treasonousGear">
+            {{> "actor-gear-list" gearList=treasonousGear gearType="treasonousGear"
+            createTitle=(localize "PARANOIA.CreateTreasonousGear")}}
+        </div>
+    </div>
+</section>

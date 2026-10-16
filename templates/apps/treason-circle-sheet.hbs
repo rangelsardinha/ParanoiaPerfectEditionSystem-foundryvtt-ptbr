@@ -1,0 +1,36 @@
+<form class="flexcol paranoia">
+    <section class="sheet-body">
+        <div class="paranoia-container">
+            <h3 class="paranoia-header">Ato de Traição Principal</h3>
+            <div class="form-group">
+                <p class="notes">{{localize "PARANOIA.TreasonCircleNotes"}}</p>
+                <textarea name="big_treason" id="big_treason" rows="3"
+                    placeholder="ex.: 'Destruiu um equipamento experimental importante de P&D'"></textarea>
+            </div>
+        </div>
+
+        <div class="paranoia-container">
+            <h3 class="paranoia-header">{{localize "PARANOIA.TroubleshooterCulpability"}}</h3>
+            <p class="notes">{{localize "PARANOIA.TreasonCulpabilityNotes"}}</p>
+            <div class="treason-entry treason-entry-header">
+                <div class="form-group"><strong>Personagem</strong></div>
+                <div class="form-group"><strong>{{localize "PARANOIA.CulpableAct"}}</strong></div>
+                <div class="form-group"><strong>{{localize "PARANOIA.Suspects"}}</strong></div>
+                <div class="form-group"><strong>{{localize "PARANOIA.HowTheyKnow"}}</strong></div>
+                <button type="button" class="add-row-button" title="{{localize "PARANOIA.AddTreasonEntry"}}"><i
+                        class="fas fa-plus"></i></button>
+            </div>
+            <div class="treason-entries-container">
+                <!-- Treason entries will be dynamically added here by the application's JS -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="sheet-footer">
+        <div class="form-group">
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> {{localize "PARANOIA.SendWhispers"}}
+            </button>
+        </div>
+    </footer>
+</form>

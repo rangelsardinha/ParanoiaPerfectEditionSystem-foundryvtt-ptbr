@@ -1,0 +1,27 @@
+<form class="skill-draft-controller sheet paranoia">
+    <section class="sheet-body">
+        {{#if (eq state.status "pending")}}
+        <div class="paranoia-container">
+            <h3 class="paranoia-header">Configurar sorteio de perícias</h3>
+            <div class="form-group participant-select-group">
+            <label>Selecionar participantes</label>
+            <p class="notes">Selecione os personagens dos jogadores que participarão do sorteio. Use Ctrl/Cmd + clique para selecionar vários, ou Shift + clique para selecionar um intervalo.</p>
+                <select name="participants" multiple size="{{playerActors.length}}">
+                    {{#each playerActors as |actor|}}
+                    <option value="{{actor.id}}">{{actor.name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <div class="form-group start-draft-container">
+            <button type="button" class="start-draft"><i class="fas fa-play"></i> Iniciar sorteio</button>
+            </div>
+        </div>
+
+        {{else if (eq state.status "active")}}
+        {{> "skill-draft-turn-info"}}
+        {{> "skill-draft-assignments"}}
+        {{else}}
+        {{> "skill-draft-complete"}}
+        {{/if}}
+    </section>
+</form>

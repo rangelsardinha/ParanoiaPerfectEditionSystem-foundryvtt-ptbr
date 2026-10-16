@@ -1,0 +1,34 @@
+<div class="sheet paranoia skill-draft-player">
+    <section class="sheet-body">
+        {{#if (eq state.status "active")}}
+            {{> "skill-draft-turn-info"}}
+
+            {{#if isMyTurn}}
+            <div class="paranoia-container">
+                <h3 class="paranoia-header">Sua vez!</h3>
+                <div class="selection-prompt">
+                <p>Selecione uma perícia para receber <strong>+{{state.round}}</strong>. {{state.nextPlayerName}} receberá <strong>-{{state.round}}</strong> nessa perícia.</p>
+                </div>
+                <div class="available-skills-grid">
+                    {{#each state.availableSkills}}
+                    <button type="button" class="skill-button" data-skill="{{this}}">{{formatSkillName this}}</button>
+                    {{/each}}
+                </div>
+            </div>
+            {{else}}
+            <div class="paranoia-container">
+                <h3 class="paranoia-header">Aguardando...</h3>
+                <div class="waiting-message">
+                <p>É a vez de <strong>{{state.currentPlayerName}}</strong> escolher.</p>
+                <p>Aguarde, Agente Atirador.</p>
+                </div>
+            </div>
+            {{/if}}
+
+            {{> "skill-draft-assignments"}}
+        {{else if (eq state.status "complete")}}
+            {{> "skill-draft-complete"}}
+            {{> "skill-draft-assignments"}}
+        {{/if}}
+    </section>
+</div>

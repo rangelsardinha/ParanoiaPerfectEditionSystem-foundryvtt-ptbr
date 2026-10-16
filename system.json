@@ -1,0 +1,71 @@
+{
+  "id": "paranoia",
+  "title": "Paranoia Edição Perfeita",
+  "description": "Paranoia Perfect Edition - DING! Attention citizen. Welcome to the first of your six lives here in Alpha Complex. I am your best friend, The Computer. Do not worry. I am here to protect you, educate you and help you stay loyal. This will make you happy and productive, as cases of severe anxiety and PTSD have dropped considerably. You have been decanted from your clone tank and are ready to serve. How may I help you be successful?",
+  "version": "0.10.0-ptbr",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "OtherwiseJunk",
+      "discord": "_dart"
+    }
+  ],
+  "esmodules": ["module/paranoia.mjs", "module/utils/compatibility.mjs"],
+  "styles": ["css/paranoia.css"],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "MissionGivers",
+      "label": "Mission Givers",
+      "system": "paranoia",
+      "path": "packs/mission-givers",
+      "type": "Actor",
+      "private": false,
+      "flags": {
+        "paranoia": {
+          "types": ["somebody"]
+        }
+      }
+    },
+    {
+      "name": "ParanoiaMacros",
+      "label": "Paranoia System Macros",
+      "system": "paranoia",
+      "type": "Macro",
+      "private": false,
+      "path": "packs/paranoia-macros"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "lang/de.json"
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "grid": {
+    "distance": "10",
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "moxie",
+  "background": "systems/paranoia/media/paranoia_background.webp",
+  "url": "https://github.com/OtherwiseJunk/ParanoiaPerfectEditionSystem-foundryvtt",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md",
+  "socket": true
+}

@@ -1,0 +1,110 @@
+<form class="{{cssClass}} {{actor.type}} flexcol paranoia" autocomplete="off">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+  <div class="grid grid-3col">
+    <div class="paranoia-npc-info">
+      <img class="paranoia-somebody-image" ; src="{{actor.img}}" data-edit="img" name="paranoia.actor.image"
+        title="{{localize "PARANOIA.UglyMug" name=actor.name}}" height="250" />
+      <div class="resource flex-group-center" style="width: 100%">
+        <label for="system.plans" class="resource-label">{{localize "PARANOIA.Quote"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <div class="paranoia-editor-container">
+            {{editor
+            enrichedQuote
+            target="system.quote"
+            button=true
+            engine="prosemirror"
+            editable=editable
+            collaborate=false }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="paranoia-npc-info grid-span-2">
+      <div class="resource flex-group-center" style="width: 100%">
+        <label for="name" class="resource-label">{{localize "PARANOIA.Name"}}</label>
+        <div class="resource-content flexrow flex-center flex-between">
+          <input class="paranoia-actor-name" type="text" name="name" value="{{actor.name}}" data-dtype="String" />
+        </div>
+      </div>
+      <div class="grid grid-2col">
+        <div>
+          <div class="resource flex-group-center" style="width: 100%">
+            <label for="system.looks" class="resource-label">{{localize "PARANOIA.Looks"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <div class="paranoia-editor-container">
+                {{editor
+                enrichedLooks
+                target="system.looks"
+                button=true
+                engine="prosemirror"
+                editable=editable
+                collaborate=false }}
+              </div>
+            </div>
+          </div>
+          <div class="resource flex-group-center" style="width: 100%">
+            <label for="system.quirks" class="resource-label">{{localize "PARANOIA.Quirks"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <div class="paranoia-editor-container">
+                {{editor
+                enrichedQuirks
+                target="system.quirks"
+                button=true
+                engine="prosemirror"
+                editable=editable
+                collaborate=false }}
+              </div>
+            </div>
+          </div>
+          <div class="resource flex-group-center" style="width: 100%">
+            <label for="system.plans" class="resource-label">{{localize "PARANOIA.Plans"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <div class="paranoia-editor-container">
+                {{editor
+                enrichedPlans
+                target="system.plans"
+                button=true
+                engine="prosemirror"
+                editable=editable
+                collaborate=false }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="resource flex-group-center" style="width: 100%">
+            <label for="system.plans" class="resource-label">{{localize "PARANOIA.Basics"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <div class="paranoia-editor-container">
+                {{editor
+                enrichedBasics
+                target="system.basics"
+                button=true
+                engine="prosemirror"
+                editable=editable
+                collaborate=false }}
+              </div>
+            </div>
+          </div>
+          <div class="resource flex-group-center" style="width: 100%">
+            <label for="system.plans" class="resource-label">{{localize "PARANOIA.Gear"}}</label>
+            <div class="resource-content flexrow flex-center flex-between">
+              <div class="paranoia-editor-container">
+                {{editor
+                enrichedGear
+                target="system.gear"
+                button=true
+                engine="prosemirror"
+                editable=editable
+                collaborate=false }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

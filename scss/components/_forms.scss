@@ -1,0 +1,264 @@
+.item-form {
+  font-family: $font-primary;
+}
+
+.sheet-header {
+  flex: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  .profile-img {
+    flex: 0 0 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .header-fields {
+    flex: 1;
+  }
+
+  h1.paramoia-charname {
+    height: 50px;
+    padding: 0px;
+    margin: 5px 0;
+    border-bottom: 0;
+
+    input {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+}
+
+.sheet-tabs {
+  flex: 0;
+}
+
+.sheet-body,
+.sheet-body .tab,
+.sheet-body .tab .editor {
+  height: 100%;
+}
+
+.tox {
+  .tox-editor-container {
+    background: $c-white;
+  }
+
+  .tox-edit-area {
+    padding: 0 8px;
+  }
+}
+
+.paranoia-checkbox-combo {
+  display: grid;
+  grid-template-columns: auto 30px;
+  justify-content: space-between;
+}
+
+.paranoia-checkbox-value {
+  justify-content: end;
+}
+
+.paranoia-checkbox-label {
+  justify-content: start;
+  padding-left: 2px;
+}
+
+.paranoia-header {
+  background-color: darkred;
+  width: 100%;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0; // Remove any default margin
+  padding: 0.5em 0; // Add vertical padding if needed
+  flex-basis: 100%; // If inside flex
+  grid-column: 1 / -1; // If inside grid
+}
+
+.paranoia-skill-label {
+  margin: 3px;
+}
+
+.paranoia-rolling {
+  margin: 4px;
+  padding-top: 5px;
+}
+
+.troubleshooter {
+  background-color: rgb(199, 199, 199);
+}
+
+.paranoia-pii-header {
+  text-align: center;
+  font-style: bold;
+}
+
+.paranoia-container {
+  outline: 2px;
+  outline-style: groove;
+  margin: 2px;
+}
+
+.paranoia-pii {
+  margin: 1px;
+  padding: 5px;
+}
+
+.paranoia-wellness-input {
+  height: 1.4em;
+  text-align: center;
+  font-size: 48px;
+}
+
+.paranoia-roll-label {
+  text-align: center;
+  padding-right: 2px;
+}
+
+.paranoia-role-textarea {
+  height: 25em;
+}
+
+.paranoia-profile-img {
+  justify-items: center;
+}
+
+.paranoia-hurtometer {
+  justify-content: center;
+}
+
+.paranoia-wellness-status-label {
+  font-size: x-large;
+  font-weight: bolder;
+  justify-self: center;
+}
+
+.paranoia-checkbox-analog {
+  max-width: fit-content;
+  font-size: large;
+}
+
+.paranoia-hurtometer {
+  justify-content: center;
+}
+
+.paranoia-flags {
+  justify-content: center;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.paranoia-editor-container {
+  margin: 5px;
+  outline: 2px;
+  outline-style: groove;
+  padding: 10px;
+}
+
+.paranoia-editor-container>.editor-content {
+  min-height: 75px;
+  height: auto;
+}
+
+.paranoia-editor-container>.editor.prosemirror {
+  min-height: 150px;
+  height: auto;
+}
+
+.paranoia {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+}
+
+button {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.paranoia-attribute-label {
+  margin-right: auto;
+  padding: 5px;
+  font-size: medium;
+}
+
+.paranoia-attribute-input {
+  margin-left: auto;
+  background-color: white;
+  color: black;
+  flex: 0 0 calc(100% / 5);
+}
+
+.paranoia-attribute-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+}
+
+.paranoia-skill-input {
+  outline: 2px solid red;
+}
+
+.profile-img {
+  background-color: #333;
+}
+
+.paranoia-npc-info {
+  margin: 10px;
+  align-items: center;
+  justify-items: center;
+  min-width: 90%;
+}
+
+.paranoia-somebody-image {
+  width: 100%;
+  height: 67%;
+  background-color: darkred;
+}
+
+.paranoia-nobody-image {
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+}
+
+.paranoia-item-image {
+  width: 100%;
+  height: 95%;
+  background-color: darkred;
+}
+
+.paranoia-select {
+  text-align-last: center;
+}
